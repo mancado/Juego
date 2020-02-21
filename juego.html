@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <script type="text/javascript" src="js/main.js"></script>
+    <title>Juego</title>
+</head>
+<body>
+    <section class="pantalla_splash" id="splash_pantalla">
+        <span><p class="tiempo">SPLASH</p></span>
+        <div id ="divgif">
+            <img src ="giphy.gif" id="splash" alt="Funny image">
+        </div>
+    </section>
+    <section class="pantalla_menu oculto" id="menu_pantalla"> 
+        <button href="#" class="musicamenu">x</button>
+        <span><p class="tiempo">Sumas
+        </p></span>
+        <div id ="menu">
+            <button href="javascript:void();" onClick="cambiarSeccion(4);">Jugar</button><br><br/> 
+            <button href="javascript:void();" onClick="cambiarSeccion(3);">Instrucciones</button><br> <br/> 
+            <button href="javascript:void();" onClick="cambiarSeccion(7);">Creditos</button><br> <br/> 
+        </div>
+    </section>
+    <section class="pantalla_instrucciones oculto" id="instrucciones_pantalla">
+        <button href="javascript:void();" onClick="cambiarSeccion(2);" class="volver"><-</button>
+        <button href="#" class="musica2">x</button>
+        <div id="menu">
+            <span><p class="tituloinstruccion">Instrucciones</p></span>
+            <p ALIGN="center" ALIGN="justify">Simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual</p>
+            <button href="javascript:void();" onClick="cambiarSeccion(4);">Jugar</button>
+        </div>
+    </section>
+    <section class="pantalla_juego oculto" id="juego_pantalla">
+        <button href="javascript:void();" onClick="cambiarSeccion(2);" class="volver"><-</button>
+        <button href="javascript:void();" onClick="cambiarSeccion(6);" class="pausa">ll</button>
+        <button href="#" class="musica">x</button>
+        <span><p id="tiempo">30'</p></span>
+        <span><p class="puntaje">9999 puntos</p></span>
+        <div id="pez_comida">
+            <span id="pez">pez</span>
+            <span id="comida">comida</span>
+        </div>
+        <table align="center" id="numeros">
+            <tr>
+                <td colspan="4"><span id="textico" class = "pantalla"></span></td>
+            </tr>
+            <tr>
+                <td><input type="button" name="" id="siete" value="7"></td>
+                <td><input type="button" name="" id="ocho" value="8"></td>
+                <td><input type="button" name="" id="nueve" value="9"></td>
+            </tr>
+            <tr>
+                <td><input type="button" name="" id="cuatro" value="4"></td>
+                <td><input type="button" name="" id="cinco" value="5"></td>
+                <td><input type="button" name="" id="seis" value="6"></td>
+            </tr>
+            <tr>
+                <td><input type="button" name="" id="uno" value="1"></td>
+                <td><input type="button" name="" id="dos" value="2"></td>
+                <td><input type="button" name="" id="tres" value="3"></td>
+            </tr>
+            <tr>
+                <td><input type="button" name="" id="cero" value="0"></td>
+                <td><input type="button" name="" id="borrar" value="C"></td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="pantalla_creditos oculto" id="creditos_pantalla">
+            <button href="javascript:void();" onClick="cambiarSeccion(2);" class="volver"><-</button>
+            <button href="javascript:void();" onClick="cambiarSeccion(6);" class="pausa">ll</button>
+            <button href="#" class="musica">x</button>
+        
+        <div id="menu2">
+            <span><p class="tituloinstruccion">Creditos</p></span>
+            <img src ="img/mujer.png" id="foto">
+            <br> <br/> 
+            <img src ="img/mujer2.png" id="foto" >
+            <br> <br/> 
+            <img src ="img/chico.png" id="foto" >
+            <br> <br/> 
+        </div>
+       
+    </section>
+
+
+
+
+
+
+
+
+    <section class="pantalla_perdiste oculto" id= "perdiste_pantalla">
+        <button href="javascript:void();" onClick="cambiarSeccion(2);" class="volver"><-</button>
+        <button href="#" class="musica2">x</button>
+        <div class="puntaje-pausa"><p id="texto-perdiste">Puntaje:</p><p class="puntaje">9999</p><button href="javascript:void();" onClick="cambiarSeccion(4);" class="volver_jugar">Volver a jugar</button></div>
+    </section>
+    <section class="pantalla_pausa oculto" id="pausa_pantalla">
+        <button href="javascript:void();" onClick="cambiarSeccion(2);" class="volver"><-</button>
+        <button href="#" class="musica2">x</button>
+        <div class="puntaje-pausa"><p id="texto-pausa">ll</p><button href="javascript:void();" onClick="cambiarSeccion(4);" class="volver_jugar">Volver a jugar</button></div>
+    </section>
+</body>
+</html>
